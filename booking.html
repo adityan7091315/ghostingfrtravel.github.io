@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social</title>
+
+    <!-- iconscout -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./css/booking.css">
+</head>
+<body> 
+    <nav>
+        <div class="container">
+            <h2 class="log">
+                GhostingFr<span>.in</span>
+            </h2>
+            <div class="search-bar">
+                <i class="uil uil-search"></i><input type="search" placeholder="Search for creators">
+            </div>
+            <div class="create">
+                <label class="btn btn-primary" for="create-post">Post</label>
+                <div class="profile-photo">
+                    <img src="/data/profile11.jpg">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+ <!----------------------------------MAIN------------------------------->
+ <main>
+    <div class="container">
+        <!--=========================left=============================-->
+        <div class="left">
+        <a class="profile">
+            <div class="profile-photo">
+                <img src="/data/profile11.jpg">
+            </div>
+            <div class="handle">
+                <h4>Aditya</h4>
+                <p class="text-muted">
+                    @adityanawhal 
+                </p>
+            </div>
+        </a>
+        
+         <!------------------------sidebar------------------------------->
+         <div class="sidebar">
+            <a class="menu-item" href="/home.html">
+                <span><i class="uil uil-home"></i></span><h3>Home</h3>
+            </a>
+            <a class="menu-item" href="/explore.html">
+                <span><i class="uil uil-compass"></i></span><h3>Explore</h3>
+            </a>
+            <a class="menu-item" id="notifications">
+                <span><i class="uil uil-heart"><small class="notification-count">9+</small></i></span><h3>Notifications </h3>
+                <!----------------------notification popup------------>
+                <div class="notifications-popup">
+                    <div>
+                        <div class="profile-photo">
+                            <img src="/data/profile3.jpg">
+                        </div>
+                        <div class="notification-body">
+                            <b>Honey</b> accepted your friend request
+                            <small class="text-muted">2 DAYS AGO</small>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="profile-photo">
+                            <img src="/data/profile2.jpg">
+                        </div>
+                        <div class="notification-body">
+                            <b>Aditya Nawhal</b> accepted your friend request
+                            <small class="text-muted">2 DAYS AGO</small>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="profile-photo">
+                            <img src="/data/profile4.jpg">
+                        </div>
+                        <div class="notification-body">
+                            <b>Vishnu bhagwan</b> requested to follow you
+                            <small class="text-muted">2 DAYS AGO</small>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="profile-photo">
+                            <img src="/data/profile5.jpg">
+                        </div>
+                        <div class="notification-body">
+                            <b>Aditya Nawhal</b> liked your post
+                            <small class="text-muted">2 DAYS AGO</small>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="profile-photo">
+                            <img src="/data/profile3.jpg">
+                        </div>
+                        <div class="notification-body">
+                            <b>Mahadev</b> liked your post
+                            <small class="text-muted">2 DAYS AGO</small>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="profile-photo">
+                            <img src="/data/profile7.jpg">
+                        </div>
+                        <div class="notification-body">
+                            <b>Parvati S</b> commented on your post
+                            <small class="text-muted">2 DAYS AGO</small>
+                        </div>
+                    </div>
+                </div>
+                <!--------------End notification Popup=------------>
+            </a>
+            <a class="menu-item" id="messages-notification" href="/messages.html">
+                <span><i class="uil uil-envelope-alt"><small class="notification-count">6</small></i></span><h3>Messages</h3>
+            </a>
+            <a class="menu-item" href="./saved.html">
+                <span><i class="uil uil-bookmark"></i></span><h3>Saved</h3>
+            </a>
+            <a class="menu-item active" href="./booking.html">
+                <span><i class="uil uil-plane-fly"></i></span><h3>Bookings</h3>
+            </a>
+            <a class="menu-item" href="/store.html">
+                <span><i class="uil uil-shopping-bag"></i></span><h3>Store</h3>
+            </a>
+            <a class="menu-item" id="theme">
+                <span><i class="uil uil-palette"></i></span><h3>Theme</h3>
+            </a>
+            <a class="menu-item" href="/setting.html">
+                <span><i class="uil uil-setting"></i></span><h3>Setings</h3>   
+            </a>
+         </div>
+         <!------------------end of sidebar--------------->
+        <label for="create-post" class="btn btn-primary">Post</label>
+        </div>
+
+
+
+
+        <!--========================Middle=============================-->
+        <div class="middle">
+           <!------------------Stories--------------------------------->
+        <div class="stories">
+          
+
+        <!-------------------------FEEDS--------------------------------->
+        <div class="feeds">
+        <!-----------------------Feed 1----------------------------------->
+            <div class="feed">
+                <h3 class="text-bold">HELLO HODOPHILE !</h3>
+                <form class="booking-data" name="submit-to-google-sheet">
+                    <a>
+                <label for="Name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Name" name="Name" required></a>
+                <br>
+                <a>
+                <label for="Email" class="form-label">Email Id</label>
+                <input type="email" class="form-control" id="Email" placeholder="Type Your Email" name="Email" required></a>
+                <br>
+                <a>
+                <label for="phone" class="form-label">Contact </label>
+                <input type="tel" class="form-control" id="Phone" placeholder="Type Your Phone Number" name="Contact Wa" required></a>
+                <br>
+                <a>
+                <label for="origin" class="form-label">Origin</label>
+                <select name="Origin" class="form-control">
+                  <option value="No origin">Select Your Origin City</option>
+                  <option value="Delhi">Delhi</option>
+                  <option value="Port Blair">Port Blair</option>
+                  <option value="Amaravati">Amaravati</option>
+                  <option value="Itanagar">Itanagar</option>
+                  <option value="Dispur">Dispur</option>
+                  <option value="Patna">Patna</option>
+                  <option value="Chandigarh">Chandigarh</option>
+                  <option value="Raipur">Raipur</option>
+                  <option value="Daman">Daman</option>
+                  <option value="Panaji">Panaji</option>
+                  <option value="Gandhinagar">Gandhinagar</option>
+                  <option value="Chandigarh">Chandigarh</option>
+                  <option value="Shimla">Shimla</option>
+                  <option value="Ranchi">Ranchi</option>
+                  <option value="Bengaluru">Bengaluru</option>
+                  <option value="Thiruvananthapuram">Thiruvananthapuram</option>
+                  <option value="Leh">Leh</option>
+                  <option value="Kavaratti">Kavaratti</option>
+                  <option value="Bhopal">Bhopal</option>
+                  <option value="Mumbai">Mumbai</option>
+                  <option value="Imphal">Imphal</option>
+                  <option value="Shillong">Shillong</option>
+                  <option value="Aizawl">Aizawl</option>
+                  <option value="Kohima">Kohima</option>
+                  <option value="Bhubaneswar">Bhubaneswar</option>
+                  <option value="Puducherry">Puducherry</option>
+                  <option value="Chandigarh">Chandigarh</option>
+                  <option value="Jaipur">Jaipur</option>
+                  <option value="Gangtok">Gangtok</option>
+                  <option value="Chennai">Chennai</option>
+                  <option value="Hyderabad">Hyderabad</option>
+                  <option value="Agartala">Agartala</option>
+                  <option value="Lucknow">Lucknow</option>
+                  <option value="Dehradun">Dehradun</option>
+                  <option value="Kolkata">Kolkata</option>
+                </select> </a>
+                <br>
+                <a>
+                <label for="destination" class="form-label">Destination</label>
+                <select name="Destination" class="form-control">
+                  <option value="no destination">Choose Your Destination</option>
+                  <option value="Agra">Agra</option>
+                  <option value="Ajanta and Ellora Caves">Ajanta and Ellora Caves</option>
+                  <option value="Alleppey">Alleppey</option>
+                  <option value="Amarnath">Amarnath</option>
+                  <option value="Amritsar">Amritsar</option>
+                  <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                  <option value="Badami">Badami</option>
+                  <option value="Bandipur National Park">Bandipur National Park</option>
+                  <option value="Bangalore">Bangalore</option>
+                  <option value="Baidyanath Dham">Baidyanath Dham</option>
+                  <option value="Bodh Gaya">Bodh Gaya</option>
+                  <option value="Chennai">Chennai</option>
+                  <option value="Chittorgarh">Chittorgarh</option>
+                  <option value="Coorg">Coorg</option>
+                  <option value="Darjeeling">Darjeeling</option>
+                  <option value="Delhi">Delhi</option>
+                  <option value="Dharamshala">Dharamshala</option>
+                  <option value="Goa">Goa</option>
+                  <option value="Golden Temple (Harmandir Sahib)">Golden Temple (Harmandir Sahib)</option>
+                  <option value="Gangtok">Gangtok</option>
+                  <option value="Gir National Park">Gir National Park</option>
+                  <option value="Gulmarg">Gulmarg</option>
+                  <option value="Hampi">Hampi</option>
+                  <option value="Haridwar">Haridwar</option>
+                  <option value="Hawa Mahal">Hawa Mahal</option>
+                  <option value="Hyderabad">Hyderabad</option>
+                  <option value="Imphal">Imphal</option>
+                  <option value="Jaipur">Jaipur</option>
+                  <option value="Jaisalmer">Jaisalmer</option>
+                  <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                  <option value="Jodhpur">Jodhpur</option>
+                  <option value="Kanchenjunga">Kanchenjunga</option>
+                  <option value="Kanyakumari">Kanyakumari</option>
+                  <option value="Kaziranga National Park">Kaziranga National Park</option>
+                  <option value="Khajuraho">Khajuraho</option>
+                  <option value="Kodaikanal">Kodaikanal</option>
+                  <option value="Kolkata">Kolkata</option>
+                  <option value="Kovalam">Kovalam</option>
+                  <option value="Kullu">Kullu</option>
+                  <option value="Leh">Leh</option>
+                  <option value="Lonavala">Lonavala</option>
+                  <option value="Lucknow">Lucknow</option>
+                  <option value="Madurai">Madurai</option>
+                  <option value="Mahabalipuram">Mahabalipuram</option>
+                  <option value="Manali">Manali</option>
+                  <option value="Matheran">Matheran</option>
+                  <option value="Mumbai">Mumbai</option>
+                  <option value="Munnar">Munnar</option>
+                  <option value="Mussoorie">Mussoorie</option>
+                  <option value="Nainital">Nainital</option>
+                  <option value="Ooty">Ooty</option>
+                  <option value="Pahalgam">Pahalgam</option>
+                  <option value="Pondicherry">Pondicherry</option>
+                  <option value="Pune">Pune</option>
+                  <option value="Pushkar">Pushkar</option>
+                  <option value="Rajasthan">Rajasthan</option>
+                  <option value="Rameswaram">Rameswaram</option>
+                  <option value="Rishikesh">Rishikesh</option>
+                  <option value="Ranthambore National Park">Ranthambore National Park</option>
+                  <option value="Sanchi Stupa">Sanchi Stupa</option>
+                  <option value="Sarnath">Sarnath</option>
+                  <option value="Shillong">Shillong</option>
+                  <option value="Shimla">Shimla</option>
+                  <option value="Sundarbans">Sundarbans</option>
+                  <option value="Taj Mahal">Taj Mahal</option>
+                  <option value="Tawang Monastery">Tawang Monastery</option>
+                  <option value="Thar Desert">Thar Desert</option>
+                  <option value="Thekkady">Thekkady</option>
+                  <option value="Tirupati">Tirupati</option>
+                  <option value="Udaipur">Udaipur</option>
+                  <option value="Vaishno Devi">Vaishno Devi</option>
+                  <option value="Valley of Flowers">Valley of Flowers</option>
+                  <option value="Varanasi">Varanasi</option>
+                  <option value="Varkala">Varkala</option>
+                  <option value="Vrindavan">Vrindavan</option>
+                  <option value="Wayanad">Wayanad</option>
+                  <option value="Andretta">Andretta</option>
+                  <option value="Auli">Auli</option>
+                  <option value="Bhimbetka Caves">Bhimbetka Caves</option>
+                  <option value="Chandigarh">Chandigarh</option>
+                  <option value="Chitrakote Falls">Chitrakote Falls</option>
+                  <option value="Dhanushkodi">Dhanushkodi</option>
+                  <option value="Dzukou Valley">Dzukou Valley</option>
+                  <option value="Gokarna">Gokarna</option>
+                  <option value="Halebidu">Halebidu</option>
+                  <option value="Hogenakkal Falls">Hogenakkal Falls</option>
+                  <option value="Jog Falls">Jog Falls</option>
+                  <option value="Kalimpong">Kalimpong</option>
+                  <option value="Kasol">Kasol</option>
+                  <option value="Kheerganga">Kheerganga</option>
+                  <option value="Kodaikanal">Kodaikanal</option>
+                  <option value="Kotagiri">Kotagiri</option>
+                  <option value="Kufri">Kufri</option>
+                  <option value="Lakshadweep">Lakshadweep</option>
+                  <option value="Mahabaleshwar">Mahabaleshwar</option>
+                  <option value="Mount Abu">Mount Abu</option>
+                  <option value="Mysore">Mysore</option>
+                  <option value="Nandi Hills">Nandi Hills</option>
+                  <option value="Orchha">Orchha</option>
+                  <option value="Pachmarhi">Pachmarhi</option>
+                  <option value="Palolem Beach">Palolem Beach</option>
+                  <option value="Pangong Lake">Pangong Lake</option>
+                  <option value="Patnitop">Patnitop</option>
+                  <option value="Pelling">Pelling</option>
+                  <option value="Pondicherry">Pondicherry</option>
+                  <option value="Rameswaram">Rameswaram</option>
+                  <option value="Ranikhet">Ranikhet</option>
+                  <option value="Ravangla">Ravangla</option>
+                  <option value="Shillong Peak">Shillong Peak</option>
+                  <option value="Silent Valley National Park">Silent Valley National Park</option>
+                  <option value="Sunderbans National Park">Sunderbans National Park</option>
+                  <option value="Tarkarli">Tarkarli</option>
+                  <option value="Thanjavur">Thanjavur</option>
+                  <option value="Tirumala">Tirumala</option>
+                  <option value="Valparai">Valparai</option>
+                  <option value="Vembanad">Vembanad</option>
+                  <option value="Wayanad Wildlife Sanctuary">Wayanad Wildlife Sanctuary</option>
+                  <option value="Yumthang Valley">Yumthang Valley</option>
+              </select></a>
+              <br>
+              <a>
+              <label for="departure-date" class="form-label">Departure Date</label>
+              <input type="date" name="departure-date" max="<?= date('Y-m-d'); ?>" required></a>
+                <br>
+                <a>
+                <label for="return-date" class="form-label">Return Date</label>
+                <input type="date" class="form-control" id="return-date" name="return-date" min="<?= date('y-m-d'); ?>" required></a>
+                <br>
+                <a>
+                <label for="adults" class="form-label">Adults:</label>
+                <input type="number" id="adults" class="form-control1" name="Adults" placeholder="0" min="1" max="15" required></a>
+                <a>
+                <label for="kids" class="form-label">Kids:</label>
+                <input type="number" class="form-control1" name="Kids" placeholder="0" min="0" max="15"></a>
+                <br>
+                <a>
+                <button type="submit" class="btn btn-primary btn-block" name="submit">Book Now</button><br>
+                <span id="success"></span></a>
+             </form>
+            </div>
+            <p class="text-muted"><h3>Terms and Condition</h3>
+           <ul>
+               <li>We respect Your Privacy thats why we will sell it at higher price</li>
+           </ul>
+        </div>
+            <!--------------------------------End of feed 8---------------------->
+        </div>
+        <!----------------------------------End Of Feed------------------------->
+        </div>
+        <!--=========================End of middle=============================-->
+    
+
+
+        <!--=========================Right=============================-->
+        <div class="right">
+            <div class="messages">
+                <div class="heading">
+                    <h4>Inbox</h4><i class="uil uil-edit"></i>
+                </div>
+                <!------------------search bar-------------------------->
+                <div class="search-bar">
+                    <i class="uil uil-search"></i>
+                    <input type="search" placeholder="Search Messages" id="message-search">
+                </div>
+                <!-----------------------------------Messages category------------------------------->
+                <div class="category">
+                    <h6 class="active">Primary</h6>
+                    <h6>General</h6>
+                    <h6 class="message-requests">Requests(5)</h6>
+                </div>
+                <!------------------------------------Messages--------------------------------->
+                <div class="message">
+                    <div class="profile-photo">
+                        <img src="/data/profile1.jpg">
+                        <div class="active"></div>
+                    </div>
+                    <div class="message-body">
+                        <h5>Dhruv</h5>
+                        <p class="text-bold">Kya Kar raha hai</p>
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="profile-photo">
+                        <img src="/data/profile9.jpg">
+                    </div>
+                    <div class="message-body">
+                        <h5>Kirti Kavya</h5>
+                        <p class="text-bold">2 new messages</p>
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="profile-photo">
+                        <img src="/data/profile12.jpg">
+                    </div>
+                    <div class="message-body">
+                        <h5>Abhishek</h5>
+                        <p class="text-muted">theek hai</p>
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="profile-photo">
+                        <img src="/data/profile6.jpg">
+                        <div class="active"></div>
+                    </div>
+                    <div class="message-body">
+                        <h5>Aashi</h5>
+                        <p class="text-bold">what is up</p>
+                    </div>
+                </div>
+            </div>
+            <!-----------------------------------end of messages----------------------------->
+            
+            <!-----------------------------------friend request------------------------------>
+            <div class="friend-requests">
+                <h4>Requests</h4>
+                <div class="requests">
+                    <div class="info">
+                        <div class="profile-photo">
+                            <img src="/data/profile4.jpg">
+                        </div>
+                        <div>
+                            <h5>Mahi Singh</h5>
+                            <p class="text-muted">
+                               8+ mutual friends
+                            </p>
+                        </div>
+                    </div>
+                    <div class="action">
+                        <button class="btn btn-primary">
+                            Accept
+                        </button>
+                        <button class="btn">
+                            Decline
+                        </button>
+                    </div>    
+                </div>
+                <div class="requests">
+                    <div class="info">
+                        <div class="profile-photo">
+                            <img src="/data/profile13.jpg">
+                        </div>
+                        <div>
+                            <h5>Rajveer Gupta</h5>
+                            <p class="text-muted">
+                               3 mutual friends
+                            </p>
+                        </div>
+                    </div>
+                    <div class="action">
+                        <button class="btn btn-primary">
+                            Accept
+                        </button>
+                        <button class="btn">
+                            Decline
+                        </button>
+                    </div>    
+                </div>
+                <div class="requests">
+                    <div class="info">
+                        <div class="profile-photo">
+                            <img src="/data/profile8.jpg">
+                        </div>
+                        <div>
+                            <h5>Khushi Pawar</h5>
+                            <p class="text-muted">
+                               2 mutual friends
+                            </p>
+                        </div>
+                    </div>
+                    <div class="action">
+                        <button class="btn btn-primary">
+                            Accept
+                        </button>
+                        <button class="btn">
+                            Decline
+                        </button>
+                    </div>    
+                </div>
+                <div class="requests">
+                    <div class="info">
+                        <div class="profile-photo">
+                            <img src="/data/profile5.jpg">
+                        </div>
+                        <div>
+                            <h5>Ken</h5>
+                            <p class="text-muted">
+                               4 mutual friends
+                            </p>
+                        </div>
+                    </div>
+                    <div class="action">
+                        <button class="btn btn-primary">
+                            Accept
+                        </button>
+                        <button class="btn">
+                            Decline
+                        </button>
+                    </div>    
+                </div>
+            </div>  
+        </div>
+        <!---------------------------====================End of Right================================================-->
+    </div>
+ </main>
+
+ <!-------------------------------------======Theme CUSTOMIZATION---------------======================================-->
+ <div class="customize-theme">
+    <div class="card">
+        <h2>customize Your View</h2>
+        <p class="text-muted">Manage Your Font size, color, and background.</p>
+
+        <!---------------------Font size--------------->
+        <div class="font-size">
+            <h4>Font size</h4>
+            <div>
+                <h6>Aa</h6>
+            <div class="choose-size">
+                <span class="font-size-1"></span>
+                <span class="font-size-2"></span>
+                <span class="font-size-3 active"></span>
+                <span class="font-size-4"></span>
+                <span class="font-size-5"></span>
+            </div>
+            <h3>Aa</h3>    
+            </div>
+        </div>
+
+        <!---------------------Primary colors ------------------>
+        <div class="color">
+            <h4>Color</h4>
+            <div class="choose-color">
+            <span class="color-1 active"></span>
+            <span class="color-2"></span>
+            <span class="color-3"></span>
+            <span class="color-4"></span>
+            <span class="color-5"></span>    
+            </div>
+        </div>
+        
+        <!--------------------Background colors------------>
+        <div class="background">
+            <h4>background</h4>
+            <div class="choose-bg">
+                <div class="bg-1 active">
+                    <span></span>
+                    <h5 for="bg-1">light</h5>
+                </div>
+                <div class="bg-2">
+                    <span></span>
+                    <h5>Dim</h5>
+                </div>
+                <div class="bg-3">
+                    <span></span>
+                    <h5 for="bg-3">Lights out</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+ <script src="./js/booking.js"></script>
+ <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyg8LG1VQs3xoGPuFe5iKTt5RiuNjXUr7bNnbEPNtEFX6KcD6V__j6qFj9BeF-_0q9W6Q/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    const success = document.getElementById('success')
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            form.reset();
+          success.innerHTML="Your Data Is Successfully Submited Wait For Our email"
+
+         setTimeout(function()
+         {
+           success.innerHTML="";
+         },5000)
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
